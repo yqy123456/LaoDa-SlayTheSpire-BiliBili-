@@ -25,7 +25,7 @@ import juggermod.ExampleMod;
 import juggermod.cards.Attack.Strike;
 import juggermod.cards.Skill.Defence;
 
-import juggermod.cards.relic.Money;
+i
 import juggermod.cards.relic.Money2;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
