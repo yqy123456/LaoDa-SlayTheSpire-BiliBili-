@@ -14,8 +14,8 @@ public class Banana3 extends CustomCard{
 	public static final String ID = "ExampleMod_Banana3";
 	private static final String NAME = "Banana Lead";
 	private static final String IMG_PATH = "ModExampleResources/img/cards/Banana.png";
-	private static final int COST = 4;
-	private static final String DESCRIPTION = "你手牌中的所有技能牌本回合费用减少5♂";
+	private static final int COST = 2;
+	private static final String DESCRIPTION = "发现 抽牌堆 !M! 张牌 的复制。 NL 消耗";
 	private static final CardType TYPE = CardType.SKILL;
 	private static final CardColor COLOR = EXAMPLE_GREEN;
 	private static final CardRarity RARITY = CardRarity.COMMON;

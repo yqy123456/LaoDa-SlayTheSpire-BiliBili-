@@ -27,7 +27,7 @@ public class Strike extends CustomCard {
 
 	public Strike() {
 		super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-		this.damage = this.baseDamage = 2;
+		this.damage = this.baseDamage = 1;
 		this.tags.add(CardTags.STARTER_STRIKE);
 		this.tags.add(CardTags.STRIKE);
 	}
@@ -36,7 +36,7 @@ public class Strike extends CustomCard {
 	public void upgrade() {
 		if (!this.upgraded) {
 			this.upgradeName();
-			this.upgradeDamage(7);
+			this.upgradeDamage(2);
 		}
 	}
 
