@@ -5,6 +5,13 @@
     "DESCRIPTIONS": [
       "皇冠，爽"
     ]
+  },
+  "CANDY_MOD_Money2": {
+    "NAME": "CTRL",
+    "FLAVOR": "每回合成长到6点费用并且所有攻击牌的伤害增加1点。",
+    "DESCRIPTIONS": [
+      "太美"
+    ]
   }
 }
 

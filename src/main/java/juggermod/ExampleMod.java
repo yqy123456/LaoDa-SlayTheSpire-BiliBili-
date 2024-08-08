@@ -19,6 +19,7 @@ import juggermod.cards.Attack.*;
 import juggermod.cards.Power.*;
 import juggermod.cards.Curse.*;
 import juggermod.cards.relic.Money;
+import juggermod.cards.relic.Money2;
 import juggermod.characters.MyCharacter;
 
 import org.apache.logging.log4j.LogManager;
@@ -111,6 +112,7 @@ public class ExampleMod implements  EditCardsSubscriber, EditCharactersSubscribe
 
     @Override
     public void receiveEditRelics() {
+        BaseMod.addRelic(new Money2(), RelicType.SHARED);
         BaseMod.addRelic(new Money(), RelicType.SHARED);
     }
 
