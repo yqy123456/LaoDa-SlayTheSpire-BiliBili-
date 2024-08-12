@@ -51,7 +51,7 @@ public class ChuanDi extends CustomCard{
 		for (int i = 0; i < monsters.size(); i++) {
 			AbstractMonster enemy = monsters.get(i);
 			// 限制伤害值
-			int damage = Math.min(i + 10, 100); // 设置伤害的上限为100
+			int damage = Math.min(i*5 + 10, 100); // 设置伤害的上限为100
 			AbstractDungeon.actionManager.addToBottom(new DamageAction(enemy, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL)));
 		}
 	}

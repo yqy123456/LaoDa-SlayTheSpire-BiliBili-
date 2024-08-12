@@ -14,7 +14,7 @@ import static juggermod.characters.MyCharacter.PlayerColorEnum.EXAMPLE_GREEN;
 public class Wow extends CustomCard {
 	public static final String ID = "ExampleMod_Wow";
 	private static final String NAME = "曼波";
-	private static final String IMG_PATH = "ModExampleResources/img/cards/009234.png";
+	private static final String IMG_PATH = "ModExampleResources/img/cards/Wow.png";
 	private static final int COST = 2;
 	private static final String DESCRIPTION = "随机对全体敌方造成两层脆弱或者两层虚弱";
 	private static final CardType TYPE = CardType.SKILL;
