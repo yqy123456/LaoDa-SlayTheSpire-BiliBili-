@@ -3,7 +3,7 @@ package juggermod.cards.Power;
 import basemod.abstracts.CustomCard;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -49,7 +49,8 @@ public class Shan extends CustomCard {
 
 	private static class SkillEnergyPower extends AbstractPower {
 		public static final String POWER_ID = "SkillEnergyPower";
-        private int skillCounter;
+		private int skillCounter;
+
 
 		public SkillEnergyPower(AbstractPlayer player) {
 			this.name = "技能赋能";
@@ -77,5 +78,7 @@ public class Shan extends CustomCard {
 		public void updateDescription() {
 			this.description = " 本回合每使用一张技能牌回复1点能量";
 		}
-	}
+
+
+    }
 }

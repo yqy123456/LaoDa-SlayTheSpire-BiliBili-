@@ -20,7 +20,7 @@ import org.apache.logging.log4j.Logger;
  * 加载遗物 用于在游戏中注入你修改的内容
  *
  * @author : Administrator
- * @date : 2020-08-05 17:01
+ * &#064;date  : 2020-08-05 17:01
  **/
 @SpireInitializer
 @SuppressWarnings("unused")

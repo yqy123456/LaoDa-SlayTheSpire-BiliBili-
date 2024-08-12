@@ -21,7 +21,6 @@ import juggermod.util.TextureLoader;
 public class Money2 extends ClickableRelic {
     public static final String ID = cn.candy.config.RelicConfig.RELIC_PRE_NAME + "Money2";
     private static final Texture IMG = TextureLoader.getTexture("ModExampleResources/img/relics/Basketball.png");
-    public static int a = 0;
     private static final Texture OUTLINE = TextureLoader.getTexture("ModExampleResources/img/relics/outline/Basketball.png");
 
 
