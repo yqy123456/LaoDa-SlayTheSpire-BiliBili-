@@ -22,7 +22,7 @@ public class MaBaoGuo extends AbstractCard {
 	public MaBaoGuo() {
 		super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
 
-		this.baseBlock = 50;
+		this.baseBlock = 30;
 	}
 
 	@Override
@@ -44,7 +44,7 @@ public class MaBaoGuo extends AbstractCard {
 	public void upgrade() {
 		if (!this.upgraded) {
 			upgradeName();
-			upgradeBlock(50);
+			upgradeBlock(20);
 		}
 	}
 }

@@ -1,14 +1,14 @@
 {
   "CANDY_MOD_Money": {
-    "NAME": "皇冠",
-    "FLAVOR": "每回合成长到6点费用并且所有攻击牌的伤害增加1点。",
+    "NAME": "你好",
+    "FLAVOR": "本回合每使用过x点费用使得所有攻击牌的伤害增加x/3点。",
     "DESCRIPTIONS": [
       "皇冠，爽"
     ]
   },
   "CANDY_MOD_Money2": {
     "NAME": "CTRL",
-    "FLAVOR": "每回合成长到6点费用并且所有攻击牌的伤害增加1点。",
+    "FLAVOR": "每回合成长到6点费用，右键启动困难模式",
     "DESCRIPTIONS": [
       "太美"
     ]

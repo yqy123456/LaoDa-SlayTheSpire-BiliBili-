@@ -15,10 +15,10 @@ import static juggermod.characters.MyCharacter.PlayerColorEnum.EXAMPLE_GREEN;
 public class DaJiYi extends CustomCard {
 	public static final String ID = "ExampleMod_S";
 	private static final int COST = 2;
-	private static final int HEAL_AMOUNT = 5;
+	private static final int HEAL_AMOUNT = 3;
 
 	public DaJiYi() {
-		super(ID, "大记忆回复术", "ModExampleResources/img/cards/006234.png", COST, "回合结束回复5点并持续两回合.", CardType.SKILL, EXAMPLE_GREEN, CardRarity.UNCOMMON, CardTarget.SELF);
+		super(ID, "大记忆回复术", "ModExampleResources/img/cards/006234.png", COST, "回合结束回复3点并持续两回合.", CardType.SKILL, EXAMPLE_GREEN, CardRarity.UNCOMMON, CardTarget.SELF);
 	}
 
 	@Override

@@ -4,6 +4,9 @@ import basemod.abstracts.CustomRelic;
 import cn.candy.config.RelicConfig;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.actions.utility.UseCardAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
@@ -44,19 +47,27 @@ public class Money extends CustomRelic {
     @Override
     public void atTurnStart() {
         this.flash();
-        if (AbstractDungeon.player.energy.energyMaster <= 6) {
-            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
-        }
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(
-                AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, 1), 1));
+        int energySpentThisTurn = 0; // 重置每回合消耗的能量
     }
 
+    @Override
+    public void onUseCard(final AbstractCard targetCard, final UseCardAction useCardAction) {
+        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, StrengthPower.POWER_ID));
 
+        // 累加消耗的能量
+        int energySpentThisTurn = targetCard.costForTurn;
+        int strengthIncrease = energySpentThisTurn / 3;
+
+        // 重新计算并应用新的力量加成
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(
+                AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, strengthIncrease), strengthIncrease));
+    }
 
     @Override
     public AbstractRelic makeCopy() {
         return new Money();
     }
+
     public String getUpdatedDescription() {
         return this.DESCRIPTIONS[0];
     }

@@ -19,7 +19,7 @@ public class Guanxing extends CustomCard {
 	public static final String ID = "ExampleMod_Guanxing";
 	private static final String NAME = "观星";
 	private static final String IMG_PATH = "ModExampleResources/img/cards/zhuge.png";
-	private static final int COST = 0;
+	private static final int COST = 1;
 	private static final String DESCRIPTION = "查看抽牌堆选择1张牌弃掉，抽取牌库顶上两张牌";
 	private static final CardType TYPE = CardType.SKILL;
 	private static final CardColor COLOR = EXAMPLE_GREEN;

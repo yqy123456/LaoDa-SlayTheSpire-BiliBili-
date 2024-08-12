@@ -15,7 +15,7 @@ public class ChuanXing extends CustomCard {
 	public static final String ID = "ExampleMod_S7";
 	private static final String NAME = "你从未体验过的船新版本";
 	private static final String IMG_PATH = "ModExampleResources/img/cards/005234.png";
-	private static final int COST = 1;
+	private static final int COST = 3;
 	private static final String DESCRIPTION = "每回合开始时递增你的费用并且额外抽一张牌";
 	private static final CardType TYPE = CardType.POWER;
 	private static final CardColor COLOR = EXAMPLE_GREEN;

@@ -13,13 +13,13 @@ public class Defence extends CustomCard {
 	public static final String ID = "ExampleMod_Defend";
 	private static final String NAME = "24";
 	private static final String IMG_PATH = "ModExampleResources/img/cards/shoulder2.png";
-	private static final int COST = 1;
+	private static final int COST = 2;
 	private static final String DESCRIPTION = "防御 !B! 点甲";
 	private static final CardType TYPE = CardType.SKILL;
 	private static final CardColor COLOR = EXAMPLE_GREEN;
 	private static final CardRarity RARITY = CardRarity.COMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
-	private static final int UPGRADE_PLUS_BLOCK = 16;
+	private static final int UPGRADE_PLUS_BLOCK = 8;
 
 	public Defence() {
 		super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
@@ -33,6 +33,7 @@ public class Defence extends CustomCard {
 		} else {
 			AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
 		}
+		this.upgradeBaseCost(1);
 	}
 
 	public AbstractCard makeCopy() {

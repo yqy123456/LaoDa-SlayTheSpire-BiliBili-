@@ -14,7 +14,7 @@ public class Ji extends CustomCard {
 	public static final String ID = "ExampleMod_Wait";
 	private static final String NAME = "急";
 	private static final String IMG_PATH = "ModExampleResources/img/cards/001234.png";
-	private static final int COST = 1;
+	private static final int COST = 2;
 	private static final String DESCRIPTION = "别急，下回合多2点费用";
 	private static final CardType TYPE = CardType.SKILL;
 	private static final CardColor COLOR = EXAMPLE_GREEN;

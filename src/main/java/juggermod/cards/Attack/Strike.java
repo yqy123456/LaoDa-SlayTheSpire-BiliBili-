@@ -18,8 +18,8 @@ public class Strike extends CustomCard {
 	public static final String ID = "ExampleMod_Strike";
 	private static final String NAME = "肘击";
 	private static final String IMG_PATH = "ModExampleResources/img/cards/shoulder1.png";
-	private static final int COST = 1;
-	private static final String DESCRIPTION = "肘击造成4次 !D! 点伤害并且洗入弃牌堆两张牌";
+	private static final int COST = 2;
+	private static final String DESCRIPTION = "肘击造成3次 !D! 点伤害并且洗入弃牌堆两张牌";
 	private static final CardType TYPE = CardType.ATTACK;
 	private static final CardColor COLOR = EXAMPLE_GREEN;
 	private static final CardRarity RARITY = CardRarity.BASIC;
@@ -45,7 +45,7 @@ public class Strike extends CustomCard {
 		int num =0;
 		while(true){
 			num+=1;
-			if(num>=5){
+			if(num>=4){
 				break;
 			}
 		AbstractDungeon.actionManager.addToBottom(

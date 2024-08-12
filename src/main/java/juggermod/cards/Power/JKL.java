@@ -16,7 +16,7 @@ public class JKL extends CustomCard {
 	public static final String ID = "ExampleMod_S4";
 	private static final String NAME = "金克拉";
 	private static final String IMG_PATH = "ModExampleResources/img/cards/jkl.png";
-	private static final int COST = 4;
+	private static final int COST = 2;
 	private static final String DESCRIPTION = "每回合开始时递增你的费用";
 	private static final CardType TYPE = CardType.POWER;
 	private static final CardColor COLOR = EXAMPLE_GREEN;

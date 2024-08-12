@@ -17,7 +17,7 @@ public class GuangTou extends CustomCard{
 	public static final String ID = "ExampleMod_GuangTou";
 	private static final String NAME = "哇，光头";
 	private static final String IMG_PATH = "ModExampleResources/img/cards/123456.png";
-	private static final int COST = 5;
+	private static final int COST = 6;
 	private static final String DESCRIPTION = "亮瞎敌人使得自身无法选中";
 	private static final CardType TYPE = CardType.SKILL;
 	private static final CardColor COLOR = EXAMPLE_GREEN;

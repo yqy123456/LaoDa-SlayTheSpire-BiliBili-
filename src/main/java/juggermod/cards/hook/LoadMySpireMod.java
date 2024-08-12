@@ -12,6 +12,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import juggermod.cards.relic.Money;
+import juggermod.cards.relic.Money2;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -44,7 +45,7 @@ public class LoadMySpireMod implements PostDungeonInitializeSubscriber, EditReli
     public void receivePostDungeonInitialize() {
         logger.info(">>>初始化开始<<<");
         //给人物添加遗物
-        tryGetRelic(new Money());
+        tryGetRelic(new Money2());
         logger.info(">>>初始化完成<<<");
     }
     

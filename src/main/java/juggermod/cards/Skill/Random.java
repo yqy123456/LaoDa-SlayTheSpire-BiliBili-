@@ -14,7 +14,7 @@ public class Random extends CustomCard {
 	public static final String ID = "ExampleMod_Random";
 	private static final String NAME = "随机";
 	private static final String IMG_PATH = "ModExampleResources/img/cards/zhuge.png";
-	private static final int COST = 0;
+	private static final int COST = 1;
 	private static final String DESCRIPTION = "随机给两张技能牌";
 	private static final CardType TYPE = CardType.SKILL;
 	private static final CardColor COLOR = EXAMPLE_GREEN;

@@ -2,6 +2,8 @@ package juggermod.cards.Power;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -17,7 +19,7 @@ public class ZhanDouShuang extends CustomCard {
 	private static final String NAME = "战斗，爽";
 	private static final String IMG_PATH = "ModExampleResources/img/cards/008234.png";
 	private static final int COST = 1;
-	private static final String DESCRIPTION = "每使用一张攻击牌，抽一张牌";
+	private static final String DESCRIPTION = "每使用两张攻击牌，抽一张牌";
 	private static final CardType TYPE = CardType.POWER;
 	private static final CardColor COLOR = EXAMPLE_GREEN;
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -47,6 +49,7 @@ public class ZhanDouShuang extends CustomCard {
 	private static class DrawOnAttackPower extends AbstractPower {
 		public static final String POWER_ID = "DrawOnAttackPower";
 		private final AbstractPlayer player;
+		private int skillCounter=0;
 
 		public DrawOnAttackPower(AbstractPlayer player) {
 			this.name = "爽";
@@ -59,14 +62,19 @@ public class ZhanDouShuang extends CustomCard {
 
 		@Override
 		public void onUseCard(AbstractCard card, UseCardAction action) {
-			if (card.type == AbstractCard.CardType.ATTACK) {
-				AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DrawCardAction(player, 1));
+
+			if (card.type == CardType.SKILL) {
+				this.skillCounter++;
+				if (this.skillCounter % 2 == 0) {
+					AbstractDungeon.actionManager.addToBottom(new DrawCardAction(player, 1));
+				}
+				this.updateDescription();
 			}
 		}
 
 		@Override
 		public void updateDescription() {
-			this.description = "每使用一张攻击牌，抽一张牌。";
+			this.description = "每使用两张攻击牌，抽一张牌。";
 		}
 	}
 

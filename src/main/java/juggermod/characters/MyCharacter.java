@@ -25,14 +25,14 @@ import juggermod.ExampleMod;
 import juggermod.cards.Attack.Strike;
 import juggermod.cards.Skill.Defence;
 
-i
+
 import juggermod.cards.relic.Money2;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class MyCharacter extends CustomPlayer {
     public static final Logger logger = LogManager.getLogger(ExampleMod.class);
-    public static final int ENERGY_PER_TURN = 4; // 每回合获得费用（能量）数
+    public static final int ENERGY_PER_TURN = 3; // 每回合获得费用（能量）数
     public static final String MY_CHARACTER_SHOULDER_2 = "ModExampleResources/img/char/shoulder.png"; // 篝火姿势
     public static final String MY_CHARACTER_SHOULDER_1 = "ModExampleResources/img/char/shoulder1.png"; // 另一个篝火姿势
     public static final String MY_CHARACTER_CORPSE = "ModExampleResources/img/char/corpse.png"; // 尸体
@@ -101,11 +101,11 @@ public class MyCharacter extends CustomPlayer {
         return new CharSelectInfo(
                 "Laoda", // 人物名字
                 "Man", // 人物介绍
-                75, // 当前血量
-                75, // 最大血量
+                24, // 当前血量
+                24, // 最大血量
                 0, // 初始充能球栏位
                 24, // 初始携带金币
-                5, // 每回合抽牌数量
+                4, // 每回合抽牌数量
                 this, // 别动
                 this.getStartingRelics(), // 初始遗物
                 this.getStartingDeck(), // 初始卡组

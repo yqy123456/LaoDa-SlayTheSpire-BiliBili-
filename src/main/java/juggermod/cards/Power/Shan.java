@@ -19,7 +19,7 @@ public class Shan extends CustomCard {
 	private static final String NAME = "善";
 	private static final String IMG_PATH = "ModExampleResources/img/cards/014234.png";
 	private static final int COST = 1;
-	private static final String DESCRIPTION = "本回合每用2技能牌回1.";
+	private static final String DESCRIPTION = "本回合每使用一张技能牌回复1点能量.";
 	private static final CardType TYPE = CardType.POWER;
 	private static final CardColor COLOR = EXAMPLE_GREEN;
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -62,12 +62,8 @@ public class Shan extends CustomCard {
 
 		@Override
 		public void onAfterUseCard(AbstractCard card, UseCardAction action) {
-			if (card.type == CardType.SKILL) {
-				this.skillCounter++;
-				if (this.skillCounter % 2 == 0) {
-					AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
-				}
-				this.updateDescription();
+			if (card.type == AbstractCard.CardType.ATTACK) {
+				AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.GainEnergyAction(1));
 			}
 		}
 
@@ -79,7 +75,7 @@ public class Shan extends CustomCard {
 
 		@Override
 		public void updateDescription() {
-			this.description = " 每当你使用两张技能牌回复一点能量";
+			this.description = " 本回合每使用一张技能牌回复1点能量";
 		}
 	}
 }

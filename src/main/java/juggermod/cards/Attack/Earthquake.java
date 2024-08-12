@@ -21,7 +21,7 @@ public class Earthquake extends CustomCard {
 	public static final String ID = "ExampleMod_Earthquake";
 	private static final String NAME = " 地震...Huh?";
 	private static final String IMG_PATH = "ModExampleResources/img/cards/huh.png";
-	private static final int COST = 1;
+	private static final int COST = 2;
 
 
 

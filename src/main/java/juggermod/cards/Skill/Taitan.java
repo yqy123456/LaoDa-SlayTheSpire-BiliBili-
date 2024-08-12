@@ -30,9 +30,23 @@ public class Taitan extends CustomCard{
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		int energyToRestore = p.energy.energyMaster - p.energy.energy;
-		AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(energyToRestore));
+		int currentEnergy = p.energy.energy;
+		int maxEnergy = p.energy.energyMaster;
+		int energyToRestore = maxEnergy - currentEnergy;
+
+		// 打印调试信息
+		System.out.println("Current Energy: " + currentEnergy);
+		System.out.println("Max Energy: " + maxEnergy);
+		System.out.println("Energy to Restore: " + energyToRestore);
+
+		// 确保恢复的能量是正数
+		if (energyToRestore > 0) {
+			AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(energyToRestore));
+		} else {
+			System.out.println("No energy to restore.");
+		}
 	}
+
 
 
 	@Override
