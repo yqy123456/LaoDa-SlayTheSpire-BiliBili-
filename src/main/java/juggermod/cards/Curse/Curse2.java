@@ -14,7 +14,7 @@ public class Curse2 extends CustomCard {
 	public static final String ID = "ExampleMod_SC2";
 	private static final String NAME = "Strong Curse1";
 	private static final String IMG_PATH = "img/cards/indomitable_will.png";
-	private static final int COST = 1;
+	private static final int COST = 2;
 	private static final String DESCRIPTION = "七二抽一";
 	private static final CardType TYPE = CardType.CURSE;
 	private static final CardColor COLOR = EXAMPLE_GREEN;

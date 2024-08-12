@@ -23,7 +23,7 @@ public class SeeYouAgain extends CustomCard {
 	private static final String DESCRIPTION = "你的下一张牌(不包括能力牌)会被打出去两次";
 	private static final CardType TYPE = CardType.SKILL;
 	private static final CardColor COLOR = EXAMPLE_GREEN;
-	private static final CardRarity RARITY = CardRarity.BASIC;
+	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
 	public SeeYouAgain() {

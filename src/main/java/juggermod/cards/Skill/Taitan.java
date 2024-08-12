@@ -15,10 +15,10 @@ public class Taitan extends CustomCard{
 	private static final String NAME = "只因";
 	private static final String IMG_PATH = "ModExampleResources/img/cards/ji.png";
 	private static final int COST = 4;
-	private static final String DESCRIPTION = "damn,能够复原你的能量";
+	private static final String DESCRIPTION = "damn,能够复原你的所有能量";
 	private static final CardType TYPE = CardType.SKILL;
 	private static final CardColor COLOR = EXAMPLE_GREEN;
-	private static final CardRarity RARITY = CardRarity.COMMON;
+	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 
 	private static final int DRAW_AMT= 3;
 

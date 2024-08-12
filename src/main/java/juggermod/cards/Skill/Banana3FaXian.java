@@ -10,7 +10,7 @@ import juggermod.cards.actions.DiscoveryDrawAction;
 import static juggermod.characters.MyCharacter.PlayerColorEnum.EXAMPLE_GREEN;
 
 
-public class Banana3 extends CustomCard{
+public class Banana3FaXian extends CustomCard{
 	public static final String ID = "ExampleMod_Banana3";
 	private static final String NAME = "Banana Lead";
 	private static final String IMG_PATH = "ModExampleResources/img/cards/Banana.png";
@@ -18,7 +18,7 @@ public class Banana3 extends CustomCard{
 	private static final String DESCRIPTION = "发现 抽牌堆 !M! 张牌 的复制。 NL 消耗";
 	private static final CardType TYPE = CardType.SKILL;
 	private static final CardColor COLOR = EXAMPLE_GREEN;
-	private static final CardRarity RARITY = CardRarity.COMMON;
+	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 
 
 
@@ -30,7 +30,7 @@ public class Banana3 extends CustomCard{
 
 
 
-	public Banana3() {
+	public Banana3FaXian() {
 		super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, CardTarget.SELF);
 
 		this.baseMagicNumber = this.magicNumber = 1;
@@ -44,7 +44,7 @@ public class Banana3 extends CustomCard{
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new Banana3();
+		return new Banana3FaXian();
 	}
 
 	@Override

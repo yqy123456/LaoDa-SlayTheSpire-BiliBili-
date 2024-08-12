@@ -99,7 +99,9 @@ public class ExampleMod implements  EditCardsSubscriber, EditCharactersSubscribe
         BaseMod.addCard(new Taitan());
         BaseMod.addCard(new Banana2());
         BaseMod.addCard(new ChuanXing());
-        BaseMod.addCard(new Banana3());
+        BaseMod.addCard(new Banana3FaXian());
+        BaseMod.addCard(new Victory());
+        BaseMod.addCard(new Wow());
 
 
 

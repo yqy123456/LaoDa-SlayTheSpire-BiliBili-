@@ -21,21 +21,21 @@ public class Earthquake extends CustomCard {
 	public static final String ID = "ExampleMod_Earthquake";
 	private static final String NAME = " 地震...Huh?";
 	private static final String IMG_PATH = "ModExampleResources/img/cards/huh.png";
-	private static final int COST = 2;
+	private static final int COST = 3;
 
 
 
 	private static final int VULNERABLE_AMT = 1;
 	private static final int UPGRADE_PLUS_VULNERABLE = 1;
-	private static final String DESCRIPTION = "造成 !D! 伤害并且全体虚弱";
+	private static final String DESCRIPTION = "造成 !D! 伤害并且全体易伤";
 	private static final CardType TYPE = CardType.ATTACK;
 	private static final CardColor COLOR = EXAMPLE_GREEN;
-	private static final CardRarity RARITY = CardRarity.COMMON;
+	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
 	public Earthquake() {
 		super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-		this.damage = this.baseDamage = 3;
+		this.damage = this.baseDamage = 6;
 		this.tags.add(CardTags.STARTER_STRIKE);
 		this.tags.add(CardTags.STRIKE);
 		this.isMultiDamage = true;

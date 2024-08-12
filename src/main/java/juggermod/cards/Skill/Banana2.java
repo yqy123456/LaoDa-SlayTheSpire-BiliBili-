@@ -13,10 +13,10 @@ public class Banana2 extends CustomCard{
 	private static final String NAME = "dark♂香蕉2.0";
 	private static final String IMG_PATH = "ModExampleResources/img/cards/Banana.png";
 	private static final int COST = 4;
-	private static final String DESCRIPTION = "你手牌中的所有技能牌本回合费用减少5♂";
+	private static final String DESCRIPTION = "所有技能牌本回合费用减少3♂";
 	private static final CardType TYPE = CardType.SKILL;
 	private static final CardColor COLOR = EXAMPLE_GREEN;
-	private static final CardRarity RARITY = CardRarity.COMMON;
+	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 
 
 

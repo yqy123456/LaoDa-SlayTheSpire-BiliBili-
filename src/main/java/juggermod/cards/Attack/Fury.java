@@ -29,7 +29,7 @@ public class Fury extends CustomCard {
 	private static final CardType TYPE = CardType.ATTACK;
 	private static final CardColor COLOR = EXAMPLE_GREEN;
 	private static final CardRarity RARITY = CardRarity.COMMON;
-	private static final String IMG_PATH = "ModExampleResources/img/cards/dachang.png";
+	private static final String IMG_PATH = "ModExampleResources/img/cards/Wow.png";
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
 	public Fury() {

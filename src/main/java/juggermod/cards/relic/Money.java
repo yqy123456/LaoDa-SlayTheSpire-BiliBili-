@@ -1,7 +1,6 @@
 package juggermod.cards.relic;
 
 import basemod.abstracts.CustomRelic;
-import cn.candy.config.RelicConfig;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
@@ -11,6 +10,8 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import static juggermod.cards.config.RelicConfig.RELIC_PRE_NAME;
 
 /**
  * 这个遗物会在开始的时候赋予房间所有怪物3点血量
@@ -22,7 +23,7 @@ public class Money extends CustomRelic {
      * 遗物ID 随便写 但是需要和json文件名称一致
      * 比如我这里最终是 CANDY_MOD_Money 就需要最后json文件内有 CANDY_MOD_Money 的遗物信息
      */
-    public static final String ID = RelicConfig.RELIC_PRE_NAME + "Money";
+    public static final String ID = RELIC_PRE_NAME + "Money";
     /**
      * 日志对象
      */

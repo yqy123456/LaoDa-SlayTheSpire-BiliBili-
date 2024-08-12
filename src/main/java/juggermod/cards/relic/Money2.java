@@ -8,6 +8,7 @@ package juggermod.cards.relic;
 import com.badlogic.gdx.graphics.Texture;
 
 
+import juggermod.cards.config.RelicConfig;
 import juggermod.cards.relic.abstracts.ClickableRelic;
 
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
@@ -19,7 +20,7 @@ import juggermod.util.TextureLoader;
 
 
 public class Money2 extends ClickableRelic {
-    public static final String ID = cn.candy.config.RelicConfig.RELIC_PRE_NAME + "Money2";
+    public static final String ID = RelicConfig.RELIC_PRE_NAME + "Money2";
     private static final Texture IMG = TextureLoader.getTexture("ModExampleResources/img/relics/Basketball.png");
     private static final Texture OUTLINE = TextureLoader.getTexture("ModExampleResources/img/relics/outline/Basketball.png");
 

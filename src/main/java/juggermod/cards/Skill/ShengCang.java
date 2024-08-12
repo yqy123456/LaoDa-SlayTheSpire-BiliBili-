@@ -18,10 +18,10 @@ public class ShengCang extends CustomCard{
 	private static final String NAME = "升舱的钱我来出";
 	private static final String IMG_PATH = "ModExampleResources/img/cards/010234.png";
 	private static final int COST = 0;
-	private static final String DESCRIPTION = "消耗十点生命抽三张牌";
+	private static final String DESCRIPTION = "消耗三点生命抽三张牌";
 	private static final CardType TYPE = CardType.SKILL;
 	private static final CardColor COLOR = EXAMPLE_GREEN;
-	private static final CardRarity RARITY = CardRarity.RARE;
+	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 
 
 

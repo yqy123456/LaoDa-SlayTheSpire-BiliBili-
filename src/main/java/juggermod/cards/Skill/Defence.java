@@ -17,7 +17,7 @@ public class Defence extends CustomCard {
 	private static final String DESCRIPTION = "防御 !B! 点甲";
 	private static final CardType TYPE = CardType.SKILL;
 	private static final CardColor COLOR = EXAMPLE_GREEN;
-	private static final CardRarity RARITY = CardRarity.COMMON;
+	private static final CardRarity RARITY = CardRarity.BASIC;
 	private static final CardTarget TARGET = CardTarget.SELF;
 	private static final int UPGRADE_PLUS_BLOCK = 8;
 
